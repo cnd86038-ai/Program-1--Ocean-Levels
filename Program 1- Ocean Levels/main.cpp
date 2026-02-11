@@ -9,9 +9,9 @@ int main()
 	double rise10Years = RISE_RATE * 10;
 
 	// Optionally, print the result
-	cout << "Ocean will rise " << rise5Years << " millimeters in 5 years." << endl;
-	cout << "Ocean will rise " << rise7Years << " millimeters in 7 years." << endl;
-	cout << "Ocean will rise " << rise10Years << " millimeters in 10 years." << endl;
+	cout << "The ocean will rise " << rise5Years << " millimeters in 5 years." << endl;
+	cout << "The ocean will rise " << rise7Years << " millimeters in 7 years." << endl;
+	cout << "The ocean will rise " << rise10Years << " millimeters in 10 years." << endl;
 
 	return 0;
 }
