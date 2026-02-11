@@ -1,9 +1,14 @@
-SET rate = 1.5 mm / year;
+#include <iostream>
+using namespace std;
 
-SET rise5 = rate * 5;
-SET rise10 = rate * 7;
-SET rise15 = rate * 10;
-
-DISPLAY rise5 AS 'Rise in 5 years',
-DISPLAY rise7 AS 'Rise in 7 years',
-DISPLAY rise10 AS 'Rise in 10 years',
+int main()
+{
+	const double RISE_RATE = 1.5; //millimeters per year
+	int years = 5;
+	cout << "Year\tOcean Level (mm/year)" << endl;
+	double oceanLevel = 0.0;
+	for (int year = 1; year <= years; year++) {
+		oceanLevel += RISE_RATE;
+		cout << year << "\t" << oceanLevel << endl;
+	}
+}
